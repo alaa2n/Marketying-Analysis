@@ -54,19 +54,162 @@ This table was then loaded into Power BI as part of the final data model.
 
 🧹 SQL Data Cleaning
 
-(kept as is)
+I cleaned all fact tables using SQL before importing them into Power BI.
 
-🔢 DAX Measures
+Key Cleaning Steps
 
-(kept as is)
+Removed duplicates
+
+Standardized column names
+
+Corrected datatypes
+
+Converted review text into structured sentiment categories
+
+Cleaned invalid product names and empty values
+
+Created a refined fact table (fact_customer_reviews) using SQL SELECT queries
+
+This ensured reliable, consistent data for analysis.
+📐 DAX Measures
+Conversion Measures
+
+ConversionRate
+
+MTD ConversionRate
+
+PrevMTD ConversionRate
+
+ConversionRate by Product
+
+Time intelligence: MTD, YTD, Month-over-Month
+
+Engagement Measures
+
+EngagementRate
+
+CTR
+
+TotalLikes, TotalViews, TotalClicks
+
+Monthly trends for views, likes, and clicks
+
+Customer Reviews Measures
+
+AvgRating
+
+MTD AvgRating
+
+Reviews by SentimentCategory
+
+Reviews by Rating
+
+These measures drove all KPI cards, line charts, comparison visuals, and trends.
 
 📊 Power BI Dashboards
 
-(kept as is)
+I designed three full dashboards, each focusing on different analytical goals.
+
+1️⃣ Conversion Dashboard
+Includes
+
+MTD Conversion Rate KPI with comparison to last month
+
+Monthly conversion trend
+
+Conversion by product
+
+Conversion by month matrix
+
+Total purchases KPI
+
+Insights Unlocked
+
+Identifying high-converting products
+
+Tracking seasonal performance
+
+Detecting months with weak conversion (e.g., May, August)
+
+2️⃣ Engagement Dashboard
+Includes
+
+Engagement Rate KPI
+
+CTR KPI
+
+Views, clicks, and likes over time
+
+Campaign count by product
+
+Views by content type (Blog, Social Media, Video)
+
+Views by month & product
+
+Insights Unlocked
+
+Views decline in the second half of the year
+
+Blogs outperform all other content types
+
+Opportunities to improve CTR with stronger CTAs
+
+3️⃣ Customer Reviews Dashboard
+Includes
+
+MTD Average Rating
+
+Review count by rating
+
+Sentiment analysis distribution
+
+Avg rating by sentiment category (monthly)
+
+Full review table with filters
+
+Insights Unlocked
+
+Majority of feedback is positive
+
+Mixed comments show improvement opportunities
+
+Seasonal drops in rating trends
 
 📈 Final Insights & Recommendations
 
-(kept as is)
+Based on dashboard insights, I developed actionable recommendations:
+
+✔ Increase conversions
+
+Focus on top-performing products
+
+Run campaigns during low-conversion months
+
+✔ Boost engagement
+
+Improve content formats
+
+Strengthen call-to-action strategies
+
+Increase content output in Sep–Dec
+
+✔ Improve customer satisfaction
+
+Analyze mixed/negative reviews
+
+Implement feedback resolution workflows
+
+Encourage updated reviews after solving issues
+
+🛠 Tools & Technologies
+
+SQL → Data cleaning & preprocessing
+
+Power BI → Data modeling, DAX, dashboards
+
+DAX → KPI calculations & time intelligence
+
+Star Schema Modeling → Optimized analytics structure
 
 🛠 Tools & Technologies
 
